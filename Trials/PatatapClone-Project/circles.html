@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circles</title>
+	<script type="text/javascript" src="js/lib/paper-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/circles.css">
+	<script type="text/paperscript" canvas="myCanvas">
+	var myCircle = new Path.Circle(new Point(600, 200), 60);
+	myCircle.fillColor = 'pink';
+	
+	var rectangle = new Rectangle(new Point(900,150), new Point(1100,250));
+	var path = new Path.Rectangle(rectangle);
+	path.fillColor = 'rgb(50,250,150)';
+	path.selected = true;
+
+	var decagon = new Path.RegularPolygon(new Point(250, 200), 9, 60);
+	decagon.fillColor = '#195A76';
+	decagon.selected = true;
+
+	var path = new Path();
+	path.strokeColor = 'red';
+	var start = new Point(100, 200);
+	var end = new Point(1200,200);
+	path.moveTo(start);
+	path.lineTo(end);
+</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>

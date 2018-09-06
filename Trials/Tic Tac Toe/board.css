@@ -1,0 +1,22 @@
+body{
+	text-align: center;
+}
+td{
+	width: 100px;
+	height: 100px;
+}
+td:hover{
+	border: 1px solid grey;
+}
+.TB{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.RL{
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+#table{
+	margin:auto; 
+    /*border-collapse: collapse;*/
+}
